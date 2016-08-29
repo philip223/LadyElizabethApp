@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="a9d-Uj-w6a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="Lsd-uQ-p4X">
+            <objects>
+                <tableViewController id="a9d-Uj-w6a" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QGQ-99-6U8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="4000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Phone Numbers" id="tAo-kx-r6E">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="upF-8I-jQh">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="upF-8I-jQh" id="vXr-OF-3aK">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRP-0w-F2f">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="965 790 252" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vd-JE-tRj">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="274" id="JlJ-50-osK"/>
+                                                        <constraint firstAttribute="height" constant="20" id="YnC-Jc-3S9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qRP-0w-F2f" firstAttribute="top" secondItem="vXr-OF-3aK" secondAttribute="topMargin" id="3ZT-6V-EdZ"/>
+                                                <constraint firstItem="6Vd-JE-tRj" firstAttribute="top" secondItem="qRP-0w-F2f" secondAttribute="bottom" constant="8" symbolic="YES" id="AZL-EV-Xvq"/>
+                                                <constraint firstItem="6Vd-JE-tRj" firstAttribute="top" secondItem="qRP-0w-F2f" secondAttribute="bottom" constant="8" id="LCR-e8-4Mr"/>
+                                                <constraint firstItem="qRP-0w-F2f" firstAttribute="leading" secondItem="vXr-OF-3aK" secondAttribute="leadingMargin" id="MLL-s3-Ww1"/>
+                                                <constraint firstItem="qRP-0w-F2f" firstAttribute="leading" secondItem="6Vd-JE-tRj" secondAttribute="leading" id="tTh-bw-HKC"/>
+                                                <constraint firstItem="6Vd-JE-tRj" firstAttribute="leading" secondItem="vXr-OF-3aK" secondAttribute="leadingMargin" id="zkm-ix-Caf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="RZG-mO-OY5">
+                                        <rect key="frame" x="0.0" y="138" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RZG-mO-OY5" id="tHS-tl-XrB">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senior School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCS-fv-AhN">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="695 731 960" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKl-86-hig">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="3Gp-oE-LrS"/>
+                                                        <constraint firstAttribute="width" constant="281" id="V6T-A0-0sS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uKl-86-hig" firstAttribute="leading" secondItem="tHS-tl-XrB" secondAttribute="leadingMargin" id="FoM-xw-oEo"/>
+                                                <constraint firstItem="iCS-fv-AhN" firstAttribute="top" secondItem="tHS-tl-XrB" secondAttribute="topMargin" id="H6q-jI-kCx"/>
+                                                <constraint firstItem="uKl-86-hig" firstAttribute="top" secondItem="iCS-fv-AhN" secondAttribute="bottom" constant="7" id="P5g-96-3pR"/>
+                                                <constraint firstItem="iCS-fv-AhN" firstAttribute="leading" secondItem="tHS-tl-XrB" secondAttribute="leadingMargin" id="YBK-Qz-AJ1"/>
+                                                <constraint firstItem="uKl-86-hig" firstAttribute="top" secondItem="iCS-fv-AhN" secondAttribute="bottom" constant="7" id="hBq-Ib-i7g"/>
+                                                <constraint firstItem="iCS-fv-AhN" firstAttribute="leading" secondItem="uKl-86-hig" secondAttribute="leading" id="uPn-UW-7D7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Emails" id="hWO-sU-jCa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="AUq-Cf-sP0">
+                                        <rect key="frame" x="0.0" y="276" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AUq-Cf-sP0" id="HmR-9L-hCx">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Master: Mr Wijeratne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oc-72-4Tt">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r.wijeratne@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e74-u3-PIL">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="274" id="FPg-Xn-Ok0"/>
+                                                        <constraint firstAttribute="height" constant="20" id="jey-Zs-a8x"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e74-u3-PIL" firstAttribute="leading" secondItem="HmR-9L-hCx" secondAttribute="leadingMargin" id="HWE-pA-4q6"/>
+                                                <constraint firstItem="1Oc-72-4Tt" firstAttribute="top" secondItem="HmR-9L-hCx" secondAttribute="topMargin" id="NQc-Vy-txE"/>
+                                                <constraint firstItem="e74-u3-PIL" firstAttribute="top" secondItem="1Oc-72-4Tt" secondAttribute="bottom" constant="8" symbolic="YES" id="WEV-tq-LPM"/>
+                                                <constraint firstItem="1Oc-72-4Tt" firstAttribute="leading" secondItem="HmR-9L-hCx" secondAttribute="leadingMargin" id="eb5-36-aY4"/>
+                                                <constraint firstItem="e74-u3-PIL" firstAttribute="top" secondItem="1Oc-72-4Tt" secondAttribute="bottom" constant="8" id="mHi-FT-P93"/>
+                                                <constraint firstItem="1Oc-72-4Tt" firstAttribute="leading" secondItem="e74-u3-PIL" secondAttribute="leading" id="mwn-RZ-MeF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="u9l-mD-2yg">
+                                        <rect key="frame" x="0.0" y="386" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9l-mD-2yg" id="y1v-RJ-wFR">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n.smolders@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-jW-g4P">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="CqR-T0-hHg"/>
+                                                        <constraint firstAttribute="width" constant="281" id="WYJ-wj-OgT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Secretary Sr: Mrs Smolders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-xh-EVZ">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2xZ-jW-g4P" firstAttribute="leading" secondItem="y1v-RJ-wFR" secondAttribute="leadingMargin" constant="-1" id="2ZI-Y7-6BS"/>
+                                                <constraint firstItem="YeY-xh-EVZ" firstAttribute="leading" secondItem="2xZ-jW-g4P" secondAttribute="leading" constant="1" id="Hdv-r2-Elx"/>
+                                                <constraint firstItem="YeY-xh-EVZ" firstAttribute="top" secondItem="y1v-RJ-wFR" secondAttribute="topMargin" id="Yur-7d-hSe"/>
+                                                <constraint firstItem="2xZ-jW-g4P" firstAttribute="top" secondItem="YeY-xh-EVZ" secondAttribute="bottom" constant="7" id="bq6-NM-qLM"/>
+                                                <constraint firstItem="2xZ-jW-g4P" firstAttribute="top" secondItem="YeY-xh-EVZ" secondAttribute="bottom" constant="7" id="cie-Ot-Azs"/>
+                                                <constraint firstItem="YeY-xh-EVZ" firstAttribute="leading" secondItem="y1v-RJ-wFR" secondAttribute="leadingMargin" id="u9D-m2-kxE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="xAy-Mb-SHU">
+                                        <rect key="frame" x="0.0" y="496" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xAy-Mb-SHU" id="sQg-WH-4IC">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Secretary Jr: Mrs Wijeratne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUH-Uk-O5W">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="junior@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24E-se-rRv">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="5Ie-As-7iW"/>
+                                                        <constraint firstAttribute="width" constant="238" id="7G5-mb-Dtb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="24E-se-rRv" firstAttribute="top" secondItem="ZUH-Uk-O5W" secondAttribute="bottom" constant="8" id="Do0-nR-00Z"/>
+                                                <constraint firstItem="ZUH-Uk-O5W" firstAttribute="leading" secondItem="24E-se-rRv" secondAttribute="leading" id="GYw-fT-OWO"/>
+                                                <constraint firstItem="24E-se-rRv" firstAttribute="leading" secondItem="sQg-WH-4IC" secondAttribute="leadingMargin" id="Ncf-dj-PLc"/>
+                                                <constraint firstItem="ZUH-Uk-O5W" firstAttribute="top" secondItem="sQg-WH-4IC" secondAttribute="topMargin" id="P1N-f9-Gva"/>
+                                                <constraint firstItem="24E-se-rRv" firstAttribute="top" secondItem="ZUH-Uk-O5W" secondAttribute="bottom" constant="8" symbolic="YES" id="WPJ-wk-ROf"/>
+                                                <constraint firstItem="ZUH-Uk-O5W" firstAttribute="leading" secondItem="sQg-WH-4IC" secondAttribute="leadingMargin" id="gEI-ew-CJk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="JDZ-w6-Xe0">
+                                        <rect key="frame" x="0.0" y="606" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JDZ-w6-Xe0" id="udg-UG-Nta">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head of Admissions: Mrs Ivars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfY-1s-Vfj">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="p.ivars@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-wC-aMb">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="246" id="cjC-zF-Sgm"/>
+                                                        <constraint firstAttribute="height" constant="20" id="tY1-9q-Ow2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WFn-wC-aMb" firstAttribute="leading" secondItem="udg-UG-Nta" secondAttribute="leadingMargin" id="5F4-dr-4Yn"/>
+                                                <constraint firstItem="GfY-1s-Vfj" firstAttribute="top" secondItem="udg-UG-Nta" secondAttribute="topMargin" id="602-VQ-bpw"/>
+                                                <constraint firstItem="WFn-wC-aMb" firstAttribute="top" secondItem="GfY-1s-Vfj" secondAttribute="bottom" constant="8" symbolic="YES" id="9pY-Li-eVt"/>
+                                                <constraint firstItem="GfY-1s-Vfj" firstAttribute="leading" secondItem="WFn-wC-aMb" secondAttribute="leading" id="Us3-F8-UEc"/>
+                                                <constraint firstItem="GfY-1s-Vfj" firstAttribute="leading" secondItem="udg-UG-Nta" secondAttribute="leadingMargin" id="aBl-Il-5GF"/>
+                                                <constraint firstItem="WFn-wC-aMb" firstAttribute="top" secondItem="GfY-1s-Vfj" secondAttribute="bottom" constant="8" id="pHo-h3-9Cp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="0xH-aZ-hcL">
+                                        <rect key="frame" x="0.0" y="716" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0xH-aZ-hcL" id="JNE-1e-kM4">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="p.baldwin@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J67-3W-zIi">
+                                                    <frame key="frameInset" minX="9" minY="38" width="282" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head of Pastoral Care: Mr Baldwin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ba-qu-hUF">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1ba-qu-hUF" firstAttribute="top" secondItem="JNE-1e-kM4" secondAttribute="topMargin" constant="1" id="oHQ-IH-gmB"/>
+                                                <constraint firstItem="1ba-qu-hUF" firstAttribute="leading" secondItem="JNE-1e-kM4" secondAttribute="leadingMargin" id="p7e-0I-cGP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="Z98-gE-pDE">
+                                        <rect key="frame" x="0.0" y="826" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z98-gE-pDE" id="lbu-Uq-yuR">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a.castle@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KG-io-20l">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director of Studies: Mr Castle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6a-tz-Xpb">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="255" id="BfO-tn-H9x"/>
+                                                        <constraint firstAttribute="height" constant="21" id="fVX-SL-9O5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9KG-io-20l" firstAttribute="leading" secondItem="lbu-Uq-yuR" secondAttribute="leadingMargin" id="FlK-vY-0hF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="k6a-tz-Xpb" secondAttribute="trailing" constant="328" id="N67-Vq-d7u"/>
+                                                <constraint firstItem="k6a-tz-Xpb" firstAttribute="leading" secondItem="9KG-io-20l" secondAttribute="leading" constant="1" id="QBw-y1-7e9"/>
+                                                <constraint firstItem="k6a-tz-Xpb" firstAttribute="top" secondItem="lbu-Uq-yuR" secondAttribute="topMargin" id="Vcp-cg-XzJ"/>
+                                                <constraint firstItem="9KG-io-20l" firstAttribute="top" secondItem="k6a-tz-Xpb" secondAttribute="bottom" constant="8" symbolic="YES" id="YaL-uQ-kOd"/>
+                                                <constraint firstItem="k6a-tz-Xpb" firstAttribute="leading" secondItem="lbu-Uq-yuR" secondAttribute="leadingMargin" constant="1" id="fTn-nz-5DE"/>
+                                                <constraint firstItem="9KG-io-20l" firstAttribute="top" secondItem="k6a-tz-Xpb" secondAttribute="bottom" constant="8" id="pVW-TG-5m6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="110" id="UrX-Cl-tzO">
+                                        <rect key="frame" x="0.0" y="936" width="600" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UrX-Cl-tzO" id="ZSf-K7-DDm">
+                                            <frame key="frameInset" width="600" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head of 6th Form: Mrs Wickman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-2F-o63">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m.wickman@laudeladyelizabeth.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-jB-J5w">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="281" id="heC-Wu-ZHq"/>
+                                                        <constraint firstAttribute="height" constant="20" id="zAG-q3-3Lx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ucC-2F-o63" firstAttribute="leading" secondItem="ZSf-K7-DDm" secondAttribute="leadingMargin" id="Mqx-dX-tKK"/>
+                                                <constraint firstItem="Wdj-jB-J5w" firstAttribute="top" secondItem="ucC-2F-o63" secondAttribute="bottom" constant="8" id="RBx-zH-qVB"/>
+                                                <constraint firstItem="Wdj-jB-J5w" firstAttribute="top" secondItem="ucC-2F-o63" secondAttribute="bottom" constant="8" symbolic="YES" id="jTG-vQ-Wcp"/>
+                                                <constraint firstItem="ucC-2F-o63" firstAttribute="top" secondItem="ZSf-K7-DDm" secondAttribute="topMargin" id="vD8-zl-dH8"/>
+                                                <constraint firstItem="ucC-2F-o63" firstAttribute="leading" secondItem="Wdj-jB-J5w" secondAttribute="leading" id="zcn-Uq-k3y"/>
+                                                <constraint firstItem="Wdj-jB-J5w" firstAttribute="leading" secondItem="ZSf-K7-DDm" secondAttribute="leadingMargin" id="zib-ch-6WK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="a9d-Uj-w6a" id="39u-7u-NmE"/>
+                            <outlet property="delegate" destination="a9d-Uj-w6a" id="UaW-VH-r51"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="4000"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWj-nE-OQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-520" y="469.56521739130437"/>
+        </scene>
+    </scenes>
+</document>

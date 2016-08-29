@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hzF-6N-ETk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="Dc5-Fw-Rlb">
+            <objects>
+                <viewController id="hzF-6N-ETk" customClass="TestViewController" customModule="Lad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jNq-ZB-Nwx"/>
+                        <viewControllerLayoutGuide type="bottom" id="beF-rI-xFm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sQc-S4-oKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the switch to continue the prosses of deleting your account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pQ-V3-k3k">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="5zD-hz-cqJ"/>
+                                    <constraint firstAttribute="height" constant="80" id="APO-v2-tr4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="07m-FN-N0t">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="0b3-zu-bRK"/>
+                                    <constraint firstAttribute="width" constant="49" id="TQg-5i-wq2"/>
+                                </constraints>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="swtich_click" destination="hzF-6N-ETk" eventType="valueChanged" id="Udb-FU-yUP"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ones you have deleted your account you are no longer able to login as this user." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-mW-7lv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="lAT-ku-sm8"/>
+                                    <constraint firstAttribute="width" constant="250" id="pAh-6G-yin"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGI-K1-KeU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="2he-oM-BMr"/>
+                                    <constraint firstAttribute="height" constant="30" id="vx3-PY-481"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3T-ff-JVo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="6tI-iW-14r"/>
+                                    <constraint firstAttribute="height" constant="30" id="ueS-hP-fbn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bk-af-2CF">
+                                <color key="backgroundColor" red="1" green="0.1787694101" blue="0.14748247819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="Fsl-zb-rWP"/>
+                                    <constraint firstAttribute="height" constant="30" id="PlM-uh-dag"/>
+                                </constraints>
+                                <state key="normal" title="Delete Your Account">
+                                    <color key="titleColor" red="0.99742268040000004" green="0.99484536079999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteBTN" destination="hzF-6N-ETk" eventType="touchUpInside" id="Fvv-hd-OUv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6bk-af-2CF" firstAttribute="top" secondItem="07m-FN-N0t" secondAttribute="bottom" constant="343" id="08a-ua-F5t"/>
+                            <constraint firstItem="2pQ-V3-k3k" firstAttribute="centerX" secondItem="sQc-S4-oKe" secondAttribute="centerX" id="0Wc-jK-UJT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2pQ-V3-k3k" secondAttribute="trailing" constant="2" id="1px-RL-mKl"/>
+                            <constraint firstItem="gGI-K1-KeU" firstAttribute="top" secondItem="E3T-ff-JVo" secondAttribute="bottom" constant="8" id="8P7-iH-9z9"/>
+                            <constraint firstItem="07m-FN-N0t" firstAttribute="centerX" secondItem="sQc-S4-oKe" secondAttribute="centerX" id="DsL-xW-o7a"/>
+                            <constraint firstItem="E3T-ff-JVo" firstAttribute="top" secondItem="6bk-af-2CF" secondAttribute="bottom" constant="-303" id="FJg-Yy-w6p"/>
+                            <constraint firstItem="zu4-mW-7lv" firstAttribute="top" secondItem="6bk-af-2CF" secondAttribute="bottom" constant="-208" id="IrX-4h-Mac"/>
+                            <constraint firstItem="zu4-mW-7lv" firstAttribute="centerX" secondItem="sQc-S4-oKe" secondAttribute="centerX" id="U7e-5x-ZAL"/>
+                            <constraint firstItem="2pQ-V3-k3k" firstAttribute="top" secondItem="jNq-ZB-Nwx" secondAttribute="bottom" constant="54" id="Xg6-f8-qpr"/>
+                            <constraint firstItem="E3T-ff-JVo" firstAttribute="centerX" secondItem="sQc-S4-oKe" secondAttribute="centerX" id="b4k-f7-3tE"/>
+                            <constraint firstItem="2pQ-V3-k3k" firstAttribute="leading" secondItem="sQc-S4-oKe" secondAttribute="leadingMargin" constant="2" id="bgI-19-z7T"/>
+                            <constraint firstItem="beF-rI-xFm" firstAttribute="top" secondItem="6bk-af-2CF" secondAttribute="bottom" constant="87" id="cej-0R-nOG"/>
+                            <constraint firstItem="6bk-af-2CF" firstAttribute="centerX" secondItem="sQc-S4-oKe" secondAttribute="centerX" id="cl1-Oa-KRB"/>
+                            <constraint firstItem="beF-rI-xFm" firstAttribute="top" secondItem="zu4-mW-7lv" secondAttribute="bottom" constant="125" id="d9I-0H-ScU"/>
+                            <constraint firstItem="gGI-K1-KeU" firstAttribute="centerX" secondItem="sQc-S4-oKe" secondAttribute="centerX" id="ewH-YH-14I"/>
+                            <constraint firstItem="zu4-mW-7lv" firstAttribute="top" secondItem="gGI-K1-KeU" secondAttribute="bottom" constant="27" id="m1g-qD-RlF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Switch1" destination="07m-FN-N0t" id="btx-Vu-Q4P"/>
+                        <outlet property="deleteBtn" destination="6bk-af-2CF" id="6IT-NK-YkM"/>
+                        <outlet property="emailAdress" destination="gGI-K1-KeU" id="HF3-Wk-W6B"/>
+                        <outlet property="fullName" destination="E3T-ff-JVo" id="4Xs-4Z-JKy"/>
+                        <outlet property="labelInfo" destination="zu4-mW-7lv" id="Vth-X8-Ncn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87v-XP-Q1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="-0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>

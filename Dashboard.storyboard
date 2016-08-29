@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S4n-km-uK1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="PYZ-sj-OTi">
+            <objects>
+                <navigationController id="S4n-km-uK1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XTz-7f-3sE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="q9z-k1-tgf" kind="relationship" relationship="rootViewController" id="DGQ-i4-Cix"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXW-WY-2tF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-513" y="301"/>
+        </scene>
+        <!--Dashboard Collection View Controller-->
+        <scene sceneID="3tk-C7-LC1">
+            <objects>
+                <collectionViewController id="q9z-k1-tgf" customClass="DashboardCollectionViewController" customModule="Lad" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MF5-jG-LiH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.33217669547872353" green="0.33217669547872353" blue="0.33217669547872353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zkj-rs-vqC">
+                            <size key="itemSize" width="569" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DashboardCollectionViewCell" id="HaN-HY-MEF" customClass="DashboardCollectionViewCell" customModule="Lad" customModuleProvider="target">
+                                <frame key="frameInset" minX="16" minY="64" width="569" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="569" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GPA-WT-5yt"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-pq-WUr">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GPA-WT-5yt" firstAttribute="height" secondItem="HaN-HY-MEF" secondAttribute="height" id="93o-Kc-6BK"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Au-pq-WUr" secondAttribute="bottom" constant="8" id="HRM-gb-Plz"/>
+                                    <constraint firstItem="6Au-pq-WUr" firstAttribute="width" secondItem="HaN-HY-MEF" secondAttribute="width" constant="-16" id="VjA-Iv-0mf"/>
+                                    <constraint firstItem="GPA-WT-5yt" firstAttribute="width" secondItem="HaN-HY-MEF" secondAttribute="width" id="YnX-vK-fgp"/>
+                                    <constraint firstItem="GPA-WT-5yt" firstAttribute="centerY" secondItem="HaN-HY-MEF" secondAttribute="centerY" id="cNN-xh-5FI"/>
+                                    <constraint firstItem="6Au-pq-WUr" firstAttribute="centerX" secondItem="HaN-HY-MEF" secondAttribute="centerX" id="ou2-2R-peC"/>
+                                    <constraint firstItem="GPA-WT-5yt" firstAttribute="centerX" secondItem="HaN-HY-MEF" secondAttribute="centerX" id="w3q-Jg-qL0"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="GPA-WT-5yt" id="oLg-Ep-XMO"/>
+                                    <outlet property="titleLabel" destination="6Au-pq-WUr" id="Bfm-a4-BMu"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="q9z-k1-tgf" id="hSb-oO-RNk"/>
+                            <outlet property="delegate" destination="q9z-k1-tgf" id="D3L-Bb-xae"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Ff3-UF-EPm"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <segue destination="kUN-0P-xv6" kind="show" identifier="News" id="Bb6-NC-EiT"/>
+                        <segue destination="GdF-3X-zRQ" kind="show" identifier="Gallery" id="yk3-7A-y10"/>
+                        <segue destination="0rX-GK-quy" kind="show" identifier="DatesAndTerms" id="ldp-7I-mGh"/>
+                        <segue destination="Zmn-hC-uXV" kind="show" identifier="Login" id="cpK-Dp-ZuD"/>
+                        <segue destination="5Fb-Fo-Wpu" kind="show" identifier="Contacts" id="hhb-z1-XJc"/>
+                        <segue destination="70N-CY-o9Z" kind="show" identifier="Transport" id="E6s-oI-IjR"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3i3-jk-24E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="271"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Yrk-8g-c9u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="kUN-0P-xv6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vne-dw-HRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="271"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="h8d-63-4O2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gallery" id="GdF-3X-zRQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySb-He-dUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="326"/>
+        </scene>
+        <!--DatesAndTerms-->
+        <scene sceneID="oWp-gD-q9J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DatesAndTerms" id="0rX-GK-quy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Me4-e2-hBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="380"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="V9u-VL-CAq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Zmn-hC-uXV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X83-b4-75P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="437"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="4Bd-zM-2Cm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Test" id="5Fb-Fo-Wpu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hc5-E3-f3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="491"/>
+        </scene>
+        <!--Transport-->
+        <scene sceneID="cXk-tu-Qoy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transport" id="70N-CY-o9Z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xU-da-MoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496" y="533"/>
+        </scene>
+    </scenes>
+</document>
