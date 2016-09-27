@@ -15,3 +15,6 @@ I have now make the Lady Elizabeth App open source so any students and teachers 
 ![simulator screen shot 28 aug 2016 13 18 58](https://cloud.githubusercontent.com/assets/17032803/18056557/a783d10a-6e0c-11e6-9ae6-ae12da2bc121.png)
 
 
+## This is opens source for the LES Network and any school students who are told to update, refactor, convert or add extentions to the project. 
+
+# this project does not contain storyboards or app frameworks 
