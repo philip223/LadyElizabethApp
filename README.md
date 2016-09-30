@@ -5,6 +5,10 @@ this is the final version of the Lady Elizabeth App
 
 ## Open Sourse😄😄😝🎉🎉🎉
 
+### currently in swift 2.3 
+
+### swift 3 syntax | 2 october 
+
 I have now make the Lady Elizabeth App open source so any students and teachers can see  how the app was made.
 
 ## screen shots
