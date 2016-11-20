@@ -7,7 +7,7 @@ this is the final version of the Lady Elizabeth App
 
 ### currently in swift 2.3 
 
-### swift 3 syntax | 5 october 
+### swift 3 syntax | coming soon
 
 I have now make the Lady Elizabeth App open source so any students and teachers can see  how the app was made.
 
